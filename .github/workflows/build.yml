@@ -1453,7 +1453,7 @@ jobs:
             
             # 定义 KMI_TAG（与自动版本保持一致）
             case "${{ inputs.android_version }}-${{ inputs.kernel_version }}" in
-              "android14-6.1")  KMI_TAG="android14-11" ;;
+              "android14-6.1")  KMI_TAG="🐎WildHorse+" ;;
               "android15-6.6")  KMI_TAG="android15-8" ;;
               "android16-6.12") KMI_TAG="android16-5" ;;
               *) KMI_TAG="${{ inputs.android_version }}" ;;
@@ -1479,7 +1479,7 @@ jobs:
             GHASH=$(git rev-parse --verify HEAD | cut -c1-13)
             # 统一内核名称格式：-androidXX-KMI-gHASH-BID-4k
             case "${{ inputs.android_version }}-${{ inputs.kernel_version }}" in
-              "android14-6.1")  KMI_TAG="android14-11" ;;
+              "android14-6.1")  KMI_TAG="🐎WildHorse+" ;;
               "android15-6.6")  KMI_TAG="android15-8" ;;
               "android16-6.12") KMI_TAG="android16-5" ;;
               *) KMI_TAG="${{ inputs.android_version }}" ;;
